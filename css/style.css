@@ -1,0 +1,231 @@
+
+/** general **/
+
+html,body {
+	width: 100%;
+	min-height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#contentWrap {
+	font-weight: 200;
+	font-size: 1.18em;
+}
+
+section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+p {
+    text-indent: 30px;
+}
+
+.mainSection {
+	min-height: 700px;//;100%;//
+	width: 100%;
+}
+
+article {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 20px 30px;
+}
+
+h3 {
+	//margin-top: 0px;
+	margin-bottom: 30px;
+	font-size: 3em;
+	width: 40%;
+	text-align: center;
+	
+}
+
+.white {
+	border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+.black {
+	border-bottom: 1px solid rgba(0,0,0,.5);
+}
+
+.whiteLink {
+	color: white;
+}
+
+.blackLink {
+	color: #252525;
+}
+
+h5 {
+	font-weight: 700;
+	font-size: 1em;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+h4 {
+	font-size: 1.2em;
+}
+
+/** header **/
+
+header {
+	width: 100%;
+	padding: 30px 0;
+	background-color: #1B242F;
+	font-size: 1.2em;
+}
+
+header ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+
+header li {
+	display: inline-block;
+	margin: 0 50px;
+}
+
+header a {
+	color: white;
+	text-decoration: none;	
+}
+
+@keyframes headHoverLeft {
+    from {padding: 0 0;}
+    to {padding-right: 10px;}
+}
+
+@keyframes headHoverRight {
+    from {padding: 0 0;}
+    to {padding-left: 10px;}
+}
+
+@keyframes hoverComp {
+	from {margin: 0 44px;}
+	to {margin: 0 34px;}
+}
+
+header a:hover::before {
+	content: "[";
+	float: left;
+	color: rgba(255,255,255,.5);
+	//font-size: .9em;
+	animation-name: headHoverLeft;
+    animation-duration: .5s;
+	-webkit-animation-fill-mode: forwards;
+}
+
+header a:hover::after {
+	content: "]";
+	color: rgba(255,255,255,.5);
+	//font-size: .9em;
+	animation-name: headHoverRight;
+    animation-duration: .5s;
+	-webkit-animation-fill-mode: forwards;
+	
+}
+
+header li:hover {
+	animation-name: hoverComp;
+    animation-duration: .5s;
+	-webkit-animation-fill-mode: forwards;
+	
+}
+
+/** index **/
+
+#lander {
+	background-image: url("../images/testCode.jpg");
+	background-size: cover;
+	
+}
+
+#landerText {
+	padding-top: 100px;//50%;
+	margin-top: -91px;
+	height: 183.109px;
+}
+
+h1,h2 {
+	text-align: center;
+	color: white;
+}
+
+h1 {
+	margin-top: 0px;
+	font-size: 4em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+/** about **/
+
+#aboutTitle {
+	padding-bottom: 20px;
+}
+
+#about {
+	background-color: #252525;
+	color: white;
+}
+
+#bio {
+	width: 70%;
+	padding-bottom: 50px;
+	padding-top: 30px;
+}
+
+#profPic {
+	width: 212px;
+}
+
+/** portfolio **/
+#portfolio {
+	background-color: white;
+	color: #252525;
+}
+
+#webdev {
+	padding-bottom: 20px;
+}
+
+.articleImage {
+	height: 256px;
+}
+
+#horizontal {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
+#report {
+	padding-bottom: 40px;
+}
+
+.pInfo {
+	margin-top: 10px;
+	font-size: .85em;
+}
+
+/* contact */
+
+#contact {
+	background-color: #252525;
+	color: white;
+}
+
+
+/* look up how to select child elements then add top margin to all contentWrap contents */
