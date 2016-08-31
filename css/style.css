@@ -78,15 +78,16 @@ h4 {
 
 header {
 	width: 100%;
-	padding: 30px 0;
+	padding: 15px 0;
 	background-color: #1B242F;
 	font-size: 1.2em;
 }
 
 header ul {
-	list-style: none;
-	display: flex;
-	justify-content: center;
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
 }
 
 header li {
@@ -183,11 +184,13 @@ h2 {
 #bio {
 	width: 70%;
 	padding-bottom: 50px;
-	padding-top: 30px;
+	padding-top: 10px;
 }
 
 #profPic {
-	width: 212px;
+    border-radius: 5px;
+    width: 212px;
+    margin-bottom: 5px;
 }
 
 /** portfolio **/
@@ -223,9 +226,9 @@ h2 {
 /* contact */
 
 #contact {
-	background-color: #252525;
-	color: white;
+    min-height: 400px; 
+    background-color: #252525;
+    color: white;
 }
-
 
 /* look up how to select child elements then add top margin to all contentWrap contents */
